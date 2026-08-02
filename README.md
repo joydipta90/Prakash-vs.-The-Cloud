@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Prakash vs. The Cloud — Phase 2 (Levels 1–6 + Environmental Cover)
 
 A lightweight, responsive 2D HTML5 Canvas web game built with **Vanilla JavaScript (OOP)** and no dependencies.
@@ -108,6 +107,3 @@ Levels 4–6 use `coverMode: true` with `coverData` arrays for trees, bus stops,
 - Boss cloud / angry lightning mechanics
 - Multiple rain types (drizzle, storm) and power-ups
 - Sound effects + WebAudio procedural rain ambience
-=======
-# Prakash-vs.-The-Cloud
->>>>>>> 63e7179df21d1319ae01eb3a5bbc19e0ba09d2b2
