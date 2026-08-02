@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prakash vs. The Cloud</title>
+  <!-- Sleek dark theme + responsive frame -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <!-- ===== Title ===== -->
+    <header class="game-header">
+      <h1>Prakash <span>vs.</span> The Cloud</h1>
+      <p class="subtitle">Rain on Prakash before he walks from HOME to OFFICE!</p>
+    </header>
+
+    <!-- ===== Canvas + HUD frame ===== -->
+    <section class="game-frame">
+      <!-- Logical resolution is 800x450; CSS scales it responsively -->
+      <canvas id="game" width="800" height="450"></canvas>
+
+      <!-- Top HUD overlay (pointer-events disabled so clicks reach the canvas) -->
+      <div class="hud">
+        <div class="hud-item hud-level">
+          <span class="hud-label" id="levelLabel">LV 1/6</span>
+        </div>
+        <div class="hud-item" id="rainWrap">
+          <span class="hud-label">RAIN</span>
+          <div class="meter">
+            <div class="meter-fill rain" id="rainMeter"></div>
+          </div>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">WETNESS</span>
+          <div class="meter">
+            <div class="meter-fill wet" id="wetMeter"></div>
+          </div>
+        </div>
+        <div class="hud-status" id="hudStatus">GO!</div>
+        <div class="hud-item">
+          <span class="hud-label" id="powerLabel"></span>
+        </div>
+      </div>
+
+      <!-- Win / Lose overlay -->
+      <div class="overlay" id="overlay" hidden>
+        <h2 id="overlayTitle"></h2>
+        <p id="overlayMsg"></p>
+        <button id="restartBtn">Play Again (R)</button>
+      </div>
+    </section>
+
+    <!-- ===== Controls hint ===== -->
+    <footer class="controls">
+      <span>🖱️ Move: Mouse / Touch</span>
+      <span>⬅️➡️ Move: Arrow Keys</span>
+      <span>🌧️ Rain: Hold Click / Space</span>
+      <span>🔥 L2–3: Prakash dashes!</span>
+      <span>☂️ L3: Watch for his umbrella!</span>
+      <span>🌳 L4: Trees block rain</span>
+      <span>🚌 L5: Bus stops — 2s pause</span>
+      <span>🚗 L6: Cars block rain!</span>
+      <span>🔄 Restart: R</span>
+    </footer>
+  </main>
+
+  <!-- Single script, no modules / no server needed -->
+  <script src="game.js"></script>
+</body>
+</html>
